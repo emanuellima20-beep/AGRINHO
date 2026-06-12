@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IrrigaSustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌱 AgroForte & Sustentável</h1>
+        <p>Simulador de Irrigação Inteligente contra o Desperdício</p>
+    </header>
+
+    <main class="container">
+        <section class="configurador">
+            <h2>Configure seu Campo</h2>
+            
+            <label for="tipoSolo">Tipo de Solo:</label>
+            <select id="tipoSolo">
+                <option value="arenoso">Arenoso (Retém pouca água)</option>
+                <option value="argiloso">Argiloso (Retém muita água)</option>
+            </select>
+
+            <label for="clima">Clima de Hoje:</label>
+            <select id="clima">
+                <option value="chuvoso">Chuvoso 🌧️</option>
+                <option value="nublado">Nublado ☁️</option>
+                <option value="ensolarado">Ensolarado ☀️</option>
+            </select>
+
+            <button id="btnCalcular">Calcular Irrigação</button>
+        </section>
+
+        <section id="resultado" class="resultado escondido">
+            <h2>Relatório de Sustentabilidade</h2>
+            <p id="mensagemAgua"></p>
+            <div class="card-economia">
+                <h3>Água Economizada hoje:</h3>
+                <p id="litrosEconomizados">0 Litros</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026 | Aluno: [Emanuel Lima]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
